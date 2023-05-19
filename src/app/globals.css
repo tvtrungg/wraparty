@@ -6,10 +6,40 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: black;
+  --red: #ed202c;
+  --blue: #61cadf;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background:
-    rgb(var(--background-start-rgb));
+  background: var(--primary-color);
+}
+
+.neon-red {
+  background-color: #fff;
+  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--red),
+    0 0 20px var(--red), 0 0 25px var(--red), 0 0 30px var(--red),
+    0 0 35px var(--red);
+}
+
+.text-neon-red {
+  color: #fff;
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--red),
+    0 0 20px var(--red), 0 0 25px var(--red), 0 0 30px var(--red),
+    0 0 35px var(--red);
+}
+
+.neon-blue {
+  background-color: #fff;
+  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--blue),
+    0 0 20px var(--blue), 0 0 25px var(--blue), 0 0 30px var(--blue),
+    0 0 35px var(--blue);
+}
+
+.text-neon-blue {
+  color: #fff;
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--blue),
+    0 0 20px var(--blue), 0 0 25px var(--blue), 0 0 30px var(--blue),
+    0 0 35px var(--blue);
 }
