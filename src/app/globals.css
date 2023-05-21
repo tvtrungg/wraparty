@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -10,6 +12,9 @@
   --red: #ed202c;
   --blue: #61cadf;
   --pink: #db3eb1;
+  --shadow-red: #ff0011;
+  --shadow-blue: #12b5cd;
+  --white: #fff;
 }
 
 body {
@@ -19,16 +24,18 @@ body {
 
 .neon-red {
   background-color: #fff;
-  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--red),
-    0 0 20px var(--red), 0 0 25px var(--red), 0 0 30px var(--red),
-    0 0 35px var(--red);
+  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-red), 0 0 20px var(--shadow-red),
+    0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
+    0 0 35px var(--shadow-red);
 }
 
 .text-neon-red {
   color: #fff;
-  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--red),
-    0 0 20px var(--red), 0 0 25px var(--red), 0 0 30px var(--red),
-    0 0 35px var(--red);
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-red), 0 0 20px var(--shadow-red),
+    0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
+    0 0 35px var(--shadow-red);
 }
 
 .text-neon-white {
@@ -39,16 +46,33 @@ body {
 
 .neon-blue {
   background-color: #fff;
-  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--blue),
-    0 0 20px var(--blue), 0 0 25px var(--blue), 0 0 30px var(--blue),
-    0 0 35px var(--blue);
+  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-blue), 0 0 20px var(--shadow-blue),
+    0 0 25px var(--shadow-blue), 0 0 30px var(--shadow-blue),
+    0 0 35px var(--shadow-blue);
 }
 
 .text-neon-blue {
   color: #fff;
-  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--blue),
-    0 0 20px var(--blue), 0 0 25px var(--blue), 0 0 30px var(--blue),
-    0 0 35px var(--blue);
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-blue), 0 0 20px var(--shadow-blue),
+    0 0 25px var(--shadow-blue), 0 0 30px var(--shadow-blue),
+    0 0 35px var(--shadow-blue);
+}
+
+.slogan-text h1 {
+  color: var(--white);
+  text-align: center;
+  font-family: "VarelaRound", sans-serif;
+}
+
+.slogan-2 h1 {
+  font-size: 2rem;
+}
+
+.mor-container {
+  margin: auto;
+  filter: url(#threshold) blur(0.6px);
 }
 
 body::-webkit-scrollbar,

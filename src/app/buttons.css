@@ -1,0 +1,62 @@
+.btn_neon {
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #fff6fb;
+    letter-spacing: 0.2rem;
+    background-color: transparent;
+}
+
+.neon_red {
+    text-shadow: -2px 2px 5px #FD3084;
+    border: 2px solid #FEB1DE;
+    box-shadow: 0 0 0px 1px #F11271,
+        0 0 10px 2px #FD3084,
+        inset 0 0 0px 1px #F11271,
+        inset 0 0 10px 2px #FD3084;
+    transition: 100ms;
+}
+
+.neon_red:hover {
+    box-shadow: 0 0 0px 1px #F11271,
+        0 0 10px 2px #FD3084,
+        inset 0 0 0px 1px #F11271,
+        inset 0 0 30px 2px #FD3084;
+    text-shadow: 0 0 10px #FD3084;
+    transform: translateY(-5px);
+}
+
+.neon_red:active {
+    box-shadow: 0 0 0px 1px #F11271,
+        0 0 25px 2px #FD3084,
+        inset 0 0 0px 1px #F11271,
+        inset 0 0 30px 2px #FD3084;
+    transform: translateY(1px);
+}
+
+.neon_cyan {
+    text-shadow: -2px 2px 5px #33ffff;
+    border: 2px solid #9af8ff;
+    box-shadow: 0 0 0px 1px #15f0f0,
+        0 0 10px 2px #3bffff,
+        inset 0 0 0px 1px #15f0f0,
+        inset 0 0 10px 2px #3bffff;
+    transition: 100ms;
+}
+
+.neon_cyan:hover {
+    box-shadow: 0 0 0px 1px #15f0f0,
+        0 0 10px 2px #33ffff,
+        inset 0 0 0px 1px #15f0f0,
+        inset 0 0 30px 2px #33ffff;
+    text-shadow: 0 0 10px #33ffff;
+    transform: translateY(-5px);
+}
+
+.neon_cyan:active {
+    box-shadow: 0 0 0px 1px #15f0f0,
+        0 0 25px 2px #33ffff,
+        inset 0 0 0px 1px #15f0f0,
+        inset 0 0 30px 2px #33ffff;
+    transform: translateY(1px);
+}
