@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primary-color: black;
+  --primary-color: #121212;
   --red: #ed202c;
   --blue: #61cadf;
 }
@@ -59,4 +59,8 @@ body,
 .app {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.primary-color-bg {
+  background-color: var(--primary-color);
 }

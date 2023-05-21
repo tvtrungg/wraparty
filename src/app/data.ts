@@ -1,5 +1,3 @@
-export const NUMBER_PAGES = 2;
-
 export const aboutUs = {
   slogan: "TEAM UP MAKES HITS",
   info: [
