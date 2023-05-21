@@ -9,6 +9,7 @@
   --primary-color: #121212;
   --red: #ed202c;
   --blue: #61cadf;
+  --pink: #db3eb1;
 }
 
 body {
@@ -59,6 +60,16 @@ body,
 .app {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.border-neon-blue {
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--blue),
+    0 0 0.8rem var(--blue), 0 0 2.8rem var(--blue), inset 0 0 1.3rem var(--blue);
+}
+
+.border-neon-red {
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--red),
+    0 0 0.8rem var(--red), 0 0 2.8rem var(--red), inset 0 0 1.3rem var(--red);
 }
 
 .primary-color-bg {

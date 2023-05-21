@@ -7,3 +7,10 @@ export const aboutUs = {
     "Here are some significant clients trusting us: Unilever, Nestle, Acecook, Nivea, Maxkleen, Yamaha, KitKat, Panasonic, Aji-No-Moto, Dutch Lady, etc.",
   ],
 };
+
+const NUMBER_LOGO = 23;
+const logoClient = [];
+for (let i = 1; i <= NUMBER_LOGO; i++) {
+  logoClient.push(`./assets/logoClient/${i}.png`);
+}
+export const logoClientLink = logoClient;
