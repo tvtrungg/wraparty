@@ -1,4 +1,4 @@
-function HomePage() {
+const HomePage = function HomePage() {
   return (
     <div className="w-screen h-screen overflow-hidden relative">
       <video autoPlay muted loop className="absolute top-0 left-0 right-0">
@@ -6,6 +6,6 @@ function HomePage() {
       </video>
     </div>
   );
-}
+};
 
 export default HomePage;
