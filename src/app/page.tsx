@@ -1,10 +1,12 @@
 "use client";
 import HomePage from "@/components/HomePage";
+import AboutPage from "@/components/AboutPage";
+import OurClientPage from "@/components/OurClientPage";
 import { Carousel, Tooltip } from "antd";
-import usePage from "./usePage";
 import "./globals.css";
+import usePage from "./usePage";
 
-const titlePage = ["Home", "Part 1", "Part 2", "Part 3", "Part 4"];
+const titlePage = ["Home", "About", "Our Client"];
 
 const renderTitleTooltip = (title: string) => {
   return <span className="text-neon-red text-lg">{title}</span>;
@@ -12,9 +14,8 @@ const renderTitleTooltip = (title: string) => {
 
 export default function Home() {
   const { currentPage, sliderRef, handleWheel, beforeChange } = usePage();
-
   return (
-    <main onWheel={handleWheel}>
+    <main className="app" onWheel={handleWheel}>
       <Carousel
         ref={sliderRef}
         vertical
@@ -42,10 +43,8 @@ export default function Home() {
         beforeChange={beforeChange}
       >
         <HomePage />
-        <div className="w-screen h-screen bg-black text-white">part 1</div>
-        <div className="w-screen h-screen bg-black text-white">part 2</div>
-        <div className="w-screen h-screen bg-black text-white">part 3</div>
-        <div className="w-screen h-screen bg-black text-white">part 4</div>
+        <AboutPage />
+        <OurClientPage />
       </Carousel>
     </main>
   );

@@ -9,7 +9,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primary-color: black;
+  --primary-color: #121212;
   --red: #ed202c;
   --blue: #61cadf;
   --shadow-red: #ff0011;
@@ -34,6 +34,12 @@ body {
   text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--shadow-red),
     0 0 20px var(--shadow-red), 0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
     0 0 35px var(--shadow-red);
+}
+
+.text-neon-white {
+  color: #fff;
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+    0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
 }
 
 .neon-blue {
@@ -65,8 +71,17 @@ body {
   filter: url(#threshold) blur(0.6px);
 }
 
-#text1,
-#text2 {
-  font-family: "Raleway", sans-serif;
-  user-select: none;
+body::-webkit-scrollbar,
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+.app {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.primary-color-bg {
+  background-color: var(--primary-color);
 }

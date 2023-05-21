@@ -1,11 +1,10 @@
+
 import useHomePage from './useHomePage';
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 
-
 function HomePage() {
   const { handleForwardToLink } = useHomePage();
-
   return (
     <div className="w-screen h-screen overflow-hidden relative">
       <video autoPlay muted loop className="absolute top-0 left-0 right-0 h-full w-full object-cover">
@@ -65,6 +64,6 @@ function HomePage() {
 
     </div>
   );
-}
+};
 
 export default HomePage;
