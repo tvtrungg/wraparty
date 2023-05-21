@@ -9,7 +9,6 @@ function usePageAnimation(isInView: boolean) {
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
-    console.log("isInView", isInView);
     animate(
       ".wrap-logo",
       isInView
