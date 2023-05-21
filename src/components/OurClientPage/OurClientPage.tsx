@@ -1,36 +1,50 @@
 import { logoClientLink } from "@/app/data";
+import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import "./OurClientPage.css";
-import { Carousel } from "antd";
+import { useEffect, useRef } from "react";
 
-const NUMBER_LOGO_IN_ROW = 6;
+const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
-const getListLogo = () => {
-  const listLogo = [];
-  for (let i = 0; i < logoClientLink.length; i += NUMBER_LOGO_IN_ROW) {
-    listLogo.push(logoClientLink.slice(i, i + NUMBER_LOGO_IN_ROW));
-  }
-  return listLogo;
-};
+function usePageAnimation(isInView: boolean) {
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    console.log("isInView", isInView);
+    animate(
+      ".wrap-logo",
+      isInView
+        ? { opacity: 1, scale: 1, filter: "blur(0px)" }
+        : { opacity: 0, scale: 0.3, filter: "blur(20px)" },
+      {
+        duration: 0.2,
+        delay: isInView ? staggerMenuItems : 0,
+      }
+    );
+  }, [isInView]);
+
+  return scope;
+}
 
 function OurClientPage() {
-  const listLogo = getListLogo();
+  const pageRef = useRef(null);
+  const isInView = useInView(pageRef);
+  const scope = usePageAnimation(isInView);
   return (
-    <div className="w-screen h-screen primary-color-bg flex justify-center items-center flex-col">
-      <div className="text-neon-red text-5xl">Our Clients</div>
-      <div className="w-4/5 h-4/5">
-        {listLogo.map((logos) => {
+    <div className="w-screen h-screen bg-primary-color flex justify-center items-center flex-col">
+      <div ref={pageRef} className="text-neon-red text-5xl mb-5">
+        Our Clients
+      </div>
+      <div
+        ref={scope}
+        className="w-4/5 h-4/5 flex justify-center items-center flex-wrap"
+      >
+        {logoClientLink.map((item, index) => {
           return (
             <div
-              key={logos[0]}
-              className="w-full flex justify-center items-center slide-row"
+              key={index}
+              className="w-1/5 h-1/5 flex justify-center items-center wrap-logo"
             >
-              {logos.map((logo) => {
-                return (
-                  <div key={logo} className="w-1/6 ml-2 mt-3">
-                    <img src={logo} alt="logo" className="" />
-                  </div>
-                );
-              })}
+              <img src={item} alt="logo" className="w-2/3 h-2/3" />
             </div>
           );
         })}

@@ -17,7 +17,7 @@ const AboutPage = function AboutPage() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="w-full text-neon-white text-xl mb-6 text-center"
+          className="w-full text-neon-blue text-xl mb-6 text-center"
         >
           {aboutUs.slogan}
         </motion.div>
