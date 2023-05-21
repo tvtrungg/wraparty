@@ -30,6 +30,12 @@ body {
     0 0 35px var(--red);
 }
 
+.text-neon-white {
+  color: #fff;
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+    0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+}
+
 .neon-blue {
   background-color: #fff;
   box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--blue),
@@ -42,4 +48,15 @@ body {
   text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--blue),
     0 0 20px var(--blue), 0 0 25px var(--blue), 0 0 30px var(--blue),
     0 0 35px var(--blue);
+}
+
+body::-webkit-scrollbar,
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+.app {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
