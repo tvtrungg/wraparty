@@ -1,6 +1,75 @@
 /*Logo Circle*/
-.own-logo {      
+.own-logo {
     animation: cirlce 2.5s ease-in-out infinite;
+}
+
+/* 
+.slogan-1 {
+    animation: fade-in-1 12s ease-in-out infinite;
+}
+
+.slogan-2 {
+    animation: fade-in-2 12s ease-in-out infinite;
+}
+
+.slogan-3 {
+    animation: fade-in-3 12s ease-in-out infinite;
+} */
+.slogan-1,
+.slogan-2,
+.slogan-3,
+.slogan-4 {
+    animation: vertical 10s linear infinite;
+    opacity: 0;
+    text-align: center;
+}
+
+.slogan-2 {
+    animation-delay: 2.5s;
+}
+
+.slogan-3 {
+    animation-delay: 5s;
+}
+
+.slogan-4 {
+    animation-delay: 7.5s;
+}
+
+/*Vertical Flip Animation*/
+
+@keyframes vertical {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes cirlce {
@@ -10,5 +79,74 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in-1 {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    20% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+@keyframes fade-in-2 {
+
+    0%,
+    33% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    53% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    73% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+@keyframes fade-in-3 {
+
+    0%,
+    66% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    86% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    96% {
+        opacity: 0;
+        filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(10px);
     }
 }

@@ -33,7 +33,7 @@ export default function Home() {
           >
             <div
               key={index}
-              className={`w-3 h-3 ml-4 rounded-full hover:cursor-pointer ${
+              className={`lg:w-3 lg:h-3 md:w-3 md:h-3  xs:w-2 xs:h-2 ml-4 rounded-full hover:cursor-pointer ${
                 currentPage === index ? "neon-red" : "bg-white/50"
               }`}
             />
