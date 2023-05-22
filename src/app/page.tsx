@@ -3,10 +3,9 @@ import HomePage from "@/components/HomePage";
 import AboutPage from "@/components/AboutPage";
 import OurClientPage from "@/components/OurClientPage";
 import { Carousel, Tooltip } from "antd";
-import "./globals.css";
 import usePage from "./usePage";
 
-const titlePage = ["Home", "About", "Our Client"];
+const titlePage = ["Home", "About", "Our Clients"];
 
 const renderTitleTooltip = (title: string) => {
   return <span className="text-neon-red text-lg">{title}</span>;

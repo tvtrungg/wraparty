@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 const AboutPage = function AboutPage() {
   return (
     <div className="w-screen h-screen flex justify-center items-center">
-      <div className="w-3/6 h-full flex flex-col items-center justify-center">
+      <div className="w-3/6">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-neon-red text-5xl text-center mb-8"
+          className="text-neon-red text-5xl text-center mb-8 "
         >
           ABOUT US
         </motion.div>
@@ -17,7 +17,7 @@ const AboutPage = function AboutPage() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="w-full text-neon-white text-xl mb-6 text-center"
+          className="w-full text-neon-blue text-xl mb-6 text-center"
         >
           {aboutUs.slogan}
         </motion.div>

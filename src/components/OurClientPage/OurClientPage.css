@@ -1,0 +1,23 @@
+.img-client {
+  transition: all 0.2s ease-in-out;
+}
+
+.img-client:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--red),
+    0 0 0.8rem var(--red), 0 0 2.8rem var(--red), inset 0 0 1.3rem var(--red);
+}
+
+.slide-row {
+  animation: swipe 5s linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

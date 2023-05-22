@@ -4,7 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -12,6 +11,7 @@
   --primary-color: #121212;
   --red: #ed202c;
   --blue: #61cadf;
+  --pink: #db3eb1;
   --shadow-red: #ff0011;
   --shadow-blue: #12b5cd;
   --white: #fff;
@@ -24,15 +24,17 @@ body {
 
 .neon-red {
   background-color: #fff;
-  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--shadow-red),
-    0 0 20px var(--shadow-red), 0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
+  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-red), 0 0 20px var(--shadow-red),
+    0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
     0 0 35px var(--shadow-red);
 }
 
 .text-neon-red {
   color: #fff;
-  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--shadow-red),
-    0 0 20px var(--shadow-red), 0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-red), 0 0 20px var(--shadow-red),
+    0 0 25px var(--shadow-red), 0 0 30px var(--shadow-red),
     0 0 35px var(--shadow-red);
 }
 
@@ -44,15 +46,17 @@ body {
 
 .neon-blue {
   background-color: #fff;
-  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--shadow-blue),
-    0 0 20px var(--shadow-blue), 0 0 25px var(--shadow-blue), 0 0 30px var(--shadow-blue),
+  box-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-blue), 0 0 20px var(--shadow-blue),
+    0 0 25px var(--shadow-blue), 0 0 30px var(--shadow-blue),
     0 0 35px var(--shadow-blue);
 }
 
 .text-neon-blue {
   color: #fff;
-  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--shadow-blue),
-    0 0 20px var(--shadow-blue), 0 0 25px var(--shadow-blue), 0 0 30px var(--shadow-blue),
+  text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 15px var(--shadow-blue), 0 0 20px var(--shadow-blue),
+    0 0 25px var(--shadow-blue), 0 0 30px var(--shadow-blue),
     0 0 35px var(--shadow-blue);
 }
 
@@ -80,6 +84,16 @@ body,
 .app {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.border-neon-blue {
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--blue),
+    0 0 0.8rem var(--blue), 0 0 2.8rem var(--blue), inset 0 0 1.3rem var(--blue);
+}
+
+.border-neon-red {
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--red),
+    0 0 0.8rem var(--red), 0 0 2.8rem var(--red), inset 0 0 1.3rem var(--red);
 }
 
 .primary-color-bg {
